@@ -53,8 +53,8 @@ app.get("/scrape", function(req, res) {
       result.link = $(this)
         .children("a")
         .attr("href");
-
-      // Create a new Article using the `result` object built from scraping
+      result.link = "https://www.nation.co.ke"+result.link
+        // Create a new Article using the `result` object built from scraping
       db.Article.create(result)
         .then(function(dbArticle) {
           // View the added result in the console
