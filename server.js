@@ -113,7 +113,7 @@ app.post("/articles/:id", function(req, res) {
   // save the new note that gets posted to the Notes collection
   // then find an article from the req.params.id
   // and update it's "note" property with the _id of the new note
-  db.Note.create(req.body)
+  db.Note.update(req.body)
     .then(function(dbPopulate) {
       
       return db.Article.findOneAndUpdate({_id: req.params.id}, { $push: { note: dbPopulate._id } }, { new: true });
