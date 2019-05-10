@@ -13,7 +13,7 @@ cheerio
 axios
 
 Deployed to Heroku (mLab) for the MongoDB database). 
-Heroku link: https: intense-cliffs-77952.herokuapp.com/
+Heroku link: https://intense-cliffs-77952.herokuapp.com/
 
 Newspaper: wwww.nation.co.ke (Kenyan newspaper)
 By Paresh Bhatti
